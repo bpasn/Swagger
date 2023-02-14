@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
@@ -11,26 +11,26 @@
   "profiles": {
     "Swagger.Web": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:7004;http://localhost:5237",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "swagger",
-        "BOOKS_COLLECTION_NAME": "Books"
-
+        "BOOKS_COLLECTION_NAME": "Books",
+        "AUTH_COLLECTION_NAME": "Auth"
       }
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "launchUrl": "swagger",
-        "environmentVariables": {
-            "ASPNETCORE_ENVIRONMENT": "Development",
-            "DATABASE_NAME": "swagger",
-            "BOOKS_COLLECTION_NAME": "Books"
-        }
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_NAME": "swagger",
+        "BOOKS_COLLECTION_NAME": "Books",
+        "AUTH_COLLECTION_NAME": "Auth"
+      }
     }
   }
 }

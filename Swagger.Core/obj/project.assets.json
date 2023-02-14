@@ -76,7 +76,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Options/7.0.0": {
+      "Microsoft.Extensions.Options/7.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -462,10 +462,10 @@
         "microsoft.extensions.logging.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.Options/7.0.0": {
-      "sha512": "lP1yBnTTU42cKpMozuafbvNtQ7QcBjr/CcK3bYOGEMH55Fjt+iecXjT6chR7vbgCMqy3PG3aNQSZgo/EuY/9qQ==",
+    "Microsoft.Extensions.Options/7.0.1": {
+      "sha512": "pZRDYdN1FpepOIfHU62QoBQ6zdAoTvnjxFfqAzEd9Jhb2dfhA5i6jeTdgGgcgTWFRC7oT0+3XrbQu4LjvgX1Nw==",
       "type": "package",
-      "path": "microsoft.extensions.options/7.0.0",
+      "path": "microsoft.extensions.options/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -486,7 +486,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.7.0.0.nupkg.sha512",
+        "microsoft.extensions.options.7.0.1.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -883,32 +883,31 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.Extensions.Options >= 7.0.0",
+      "Microsoft.Extensions.Options >= 7.0.1",
       "MongoDB.Bson >= 2.19.0",
       "MongoDB.Driver >= 2.19.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pirunporn.aia\\.nuget\\packages\\": {}
+    "/Users/prpasn/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\Swagger.Core.csproj",
+      "projectUniqueName": "/Users/prpasn/Desktop/Swagger/Swagger.Core/Swagger.Core.csproj",
       "projectName": "Swagger.Core",
-      "projectPath": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\Swagger.Core.csproj",
-      "packagesPath": "C:\\Users\\pirunporn.aia\\.nuget\\packages\\",
-      "outputPath": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\obj\\",
+      "projectPath": "/Users/prpasn/Desktop/Swagger/Swagger.Core/Swagger.Core.csproj",
+      "packagesPath": "/Users/prpasn/.nuget/packages/",
+      "outputPath": "/Users/prpasn/Desktop/Swagger/Swagger.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pirunporn.aia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/prpasn/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -929,7 +928,7 @@
         "dependencies": {
           "Microsoft.Extensions.Options": {
             "target": "Package",
-            "version": "[7.0.0, )"
+            "version": "[7.0.1, )"
           },
           "MongoDB.Bson": {
             "target": "Package",
@@ -956,7 +955,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

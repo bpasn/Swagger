@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SwaggerC#\\Swagger.Web\\Swagger.Web\\Swagger.Web.csproj": {}
+    "/Users/prpasn/Desktop/Swagger/Swagger.Web/Swagger.Web.csproj": {}
   },
   "projects": {
-    "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\Swagger.Core.csproj": {
+    "/Users/prpasn/Desktop/Swagger/Swagger.Core/Swagger.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\Swagger.Core.csproj",
+        "projectUniqueName": "/Users/prpasn/Desktop/Swagger/Swagger.Core/Swagger.Core.csproj",
         "projectName": "Swagger.Core",
-        "projectPath": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\Swagger.Core.csproj",
-        "packagesPath": "C:\\Users\\pirunporn.aia\\.nuget\\packages\\",
-        "outputPath": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\obj\\",
+        "projectPath": "/Users/prpasn/Desktop/Swagger/Swagger.Core/Swagger.Core.csproj",
+        "packagesPath": "/Users/prpasn/.nuget/packages/",
+        "outputPath": "/Users/prpasn/Desktop/Swagger/Swagger.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pirunporn.aia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/prpasn/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,7 +41,7 @@
           "dependencies": {
             "Microsoft.Extensions.Options": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "MongoDB.Bson": {
               "target": "Package",
@@ -69,36 +68,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SwaggerC#\\Swagger.Web\\Swagger.Web\\Swagger.Web.csproj": {
+    "/Users/prpasn/Desktop/Swagger/Swagger.Web/Swagger.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Web\\Swagger.Web.csproj",
+        "projectUniqueName": "/Users/prpasn/Desktop/Swagger/Swagger.Web/Swagger.Web.csproj",
         "projectName": "Swagger.Web",
-        "projectPath": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Web\\Swagger.Web.csproj",
-        "packagesPath": "C:\\Users\\pirunporn.aia\\.nuget\\packages\\",
-        "outputPath": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Web\\obj\\",
+        "projectPath": "/Users/prpasn/Desktop/Swagger/Swagger.Web/Swagger.Web.csproj",
+        "packagesPath": "/Users/prpasn/.nuget/packages/",
+        "outputPath": "/Users/prpasn/Desktop/Swagger/Swagger.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pirunporn.aia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/prpasn/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\Swagger.Core.csproj": {
-                "projectPath": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\Swagger.Core.csproj"
+              "/Users/prpasn/Desktop/Swagger/Swagger.Core/Swagger.Core.csproj": {
+                "projectPath": "/Users/prpasn/Desktop/Swagger/Swagger.Core/Swagger.Core.csproj"
               }
             }
           }
@@ -115,7 +113,7 @@
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -137,7 +135,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
