@@ -6,5 +6,9 @@ namespace Swagger.Core
     {
 
         List<Book> GetBooks();
+
+        Book AddBook(Book book);
+
+        Book GetBook(string id);
     }
 }
