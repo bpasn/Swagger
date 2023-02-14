@@ -10,5 +10,9 @@ namespace Swagger.Core
         Book AddBook(Book book);
 
         Book GetBook(string id);
+
+        void DeleteBook(string id);
+
+        Book UpdateBook(Book book);
     }
 }

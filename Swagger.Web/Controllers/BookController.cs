@@ -31,5 +31,16 @@ namespace Swagger.Web.Controllers
             _bookservice.AddBook(book);
             return CreatedAtRoute("GetBook", new { id = book.Id }, book);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteBook(string id){
+            _bookservice.DeleteBook(id);
+            return NoContent();
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateBook(Book book){
+            return Ok(_bookservice.UpdateBook(book));
+        }
     }
 }
