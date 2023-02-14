@@ -1,0 +1,12 @@
+D:\SwaggerC#\Swagger.Web\Swagger.Core\bin\Debug\net6.0\Swagger.Core.deps.json
+D:\SwaggerC#\Swagger.Web\Swagger.Core\bin\Debug\net6.0\Swagger.Core.dll
+D:\SwaggerC#\Swagger.Web\Swagger.Core\bin\Debug\net6.0\Swagger.Core.pdb
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\Swagger.Core.csproj.AssemblyReference.cache
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\Swagger.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\Swagger.Core.AssemblyInfoInputs.cache
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\Swagger.Core.AssemblyInfo.cs
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\Swagger.Core.csproj.CoreCompileInputs.cache
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\Swagger.Core.dll
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\refint\Swagger.Core.dll
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\Swagger.Core.pdb
+D:\SwaggerC#\Swagger.Web\Swagger.Core\obj\Debug\net6.0\ref\Swagger.Core.dll
