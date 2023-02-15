@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swagger.Core.AuthService;
+using Swagger.Core.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,23 +23,36 @@ namespace Swagger.Web.Controllers
             _authService = authServices;
         }
 
-        [HttpGet("GetUsers")]
-        public IActionResult GetUsers()
-        {
-            
-            return Ok(_authService.GetAuths());
-        }
+        // [HttpGet("GetUsers")]
+        // public IActionResult GetUsers()
+        // {
+        //     return Ok(_authService.GetAuths());
+        // }
 
-        [HttpGet("{id}", Name = "GetUser")]
-        public IActionResult GetUser(string id)
+        // [HttpGet("{id}", Name = "GetUser")]
+        // public IActionResult GetUser(string id)
+        // {
+        //     return Ok(_authService.GetAuth(id));
+        // }
+
+        // [HttpPost("AddUser")]
+        // public IActionResult AddUser(Auth auth)
+        // {
+        //     _authService.AddUser(auth);
+        //     return CreatedAtRoute("GetUser", new { id = auth.Id }, auth);
+        // }
+        [HttpPost("insert-user")]
+        public async Task<IActionResult> InsertUserAsync(AuthRegisterModel auth)
         {
-            return Ok(_authService.GetAuth(id));
-        }
-        [HttpPost("AddUser")]
-        public IActionResult AddUser(Auth auth)
-        {
-            _authService.AddUser(auth);
-            return CreatedAtRoute("GetUser", new { id = auth.Id }, auth);
+            try
+            {
+                await _authService.InsertUser(auth);
+                return Ok();
+            }
+            catch (Exception error)
+            {
+                throw error;
+            }
         }
     }
 }

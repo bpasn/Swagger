@@ -13,6 +13,8 @@ namespace Swagger.Core
         public string Books_Collection_Name { get; set; }
 
         public string Auth_Collection_Name { get; set; }
+        
+        public string Users_Collection_Name { get; set; }
 
         public string Connection_String { get; set; }
     }

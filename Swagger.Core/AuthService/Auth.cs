@@ -1,24 +1,36 @@
-﻿using System;
-using MongoDB.Bson.Serialization.Attributes;
-
+﻿using MongoDB.Bson.Serialization.Attributes;
 namespace Swagger.Core.AuthService
 {
-	public class Auth
+    public class Auth
 
-	{
-		[BsonId]
-		[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-		public string? Id { get; set; }
+    {
+        private string pwd;
 
-		public string Name { get; set; }
+        [BsonId]
+        [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        public string? Id { get; set; }
 
-		public string Pwd { get; set; }
+        [BsonRequired]
+        public string Name { get; set; }
 
-		public string User_type { get; set; }
+        public string Pwd
+        {
+            get
+            {
+                return this.pwd;
+            }
+            set
+            {
+                this.pwd = Helper.HashCode(value); ;
+            }
+        }
 
-		public bool Status { get; set; }
+        public string User_type { get; set; }
+
+        public bool Status { get; set; }
 
 
-	}
+
+    }
 }
 

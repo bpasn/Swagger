@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "g11dVH8AzFlMw8Cm9rrcSIkJh4Y1i1g/e0JN+QD+udrb9S1MqPi27AVrP/K7s6s8fF90veOr49HwmiQnFSSHsg==",
+  "dgSpecHash": "tO5xrkB7u4Xh2dyE1jOZERTAk61OQjKkG1ouCwHJeMvIU9BJqh0H4B9DogHNWJpVezaMqVS4mIujnR+UPvYVfw==",
   "success": true,
   "projectFilePath": "D:\\SwaggerC#\\Swagger.Web\\Swagger.Core\\Swagger.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pirunporn.aia\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\pirunporn.aia\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\pirunporn.aia\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\pirunporn.aia\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.3\\microsoft.aspnetcore.cryptography.internal.7.0.3.nupkg.sha512",
+    "C:\\Users\\pirunporn.aia\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.3\\microsoft.aspnetcore.cryptography.keyderivation.7.0.3.nupkg.sha512",
     "C:\\Users\\pirunporn.aia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\pirunporn.aia\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\pirunporn.aia\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",

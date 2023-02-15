@@ -33,14 +33,23 @@ namespace Swagger.Web.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteBook(string id){
+        public IActionResult DeleteBook(string id)
+        {
             _bookservice.DeleteBook(id);
             return NoContent();
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateBook(Book book){
-            return Ok(_bookservice.UpdateBook(book));
+        public IActionResult UpdateBook(Book book)
+        {
+            try
+            {
+                return Ok(_bookservice.UpdateBook(book));
+            }
+            catch (System.Exception)
+            {
+               throw;
+            }
         }
     }
 }

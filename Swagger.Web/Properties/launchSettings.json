@@ -18,7 +18,8 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "swagger",
         "BOOKS_COLLECTION_NAME": "Books",
-        "AUTH_COLLECTION_NAME": "Auth"
+        "AUTH_COLLECTION_NAME": "Auth",
+        "USERS_COLLECTION_NAME": "Users"
       }
     },
     "IIS Express": {
@@ -29,7 +30,8 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "swagger",
         "BOOKS_COLLECTION_NAME": "Books",
-        "AUTH_COLLECTION_NAME": "Auth"
+        "AUTH_COLLECTION_NAME": "Auth",
+        "USERS_COLLECTION_NAME": "Users"
       }
     }
   }

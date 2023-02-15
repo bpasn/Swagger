@@ -12,6 +12,6 @@ build_property.RootNamespace = Swagger.Web
 build_property.ProjectDir = D:\SwaggerC#\Swagger.Web\Swagger.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\SwaggerC#\Swagger.Web\Swagger.Web
 build_property._RazorSourceGeneratorDebug = 
