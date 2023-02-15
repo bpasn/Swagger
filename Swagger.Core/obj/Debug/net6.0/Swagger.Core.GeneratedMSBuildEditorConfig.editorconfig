@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Swagger.Core
-build_property.ProjectDir = /Users/prpasn/Desktop/Swagger/Swagger.Core/
+build_property.ProjectDir = D:\SwaggerC#\Swagger.Web\Swagger.Core\
