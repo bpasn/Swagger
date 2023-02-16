@@ -2,7 +2,7 @@
 
 namespace Swagger.Core
 {
-    public interface IBookServices
+    public interface IBookServices 
     {
 
         List<Book> GetBooks();

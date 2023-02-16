@@ -3,5 +3,3 @@ var rootPassword = '1234';
 var admin = db.getSiblingDB('admin');
 var user = "swagger";
 var passwd = "1234";
-
-EOF

@@ -15,17 +15,32 @@ namespace Swagger.Web.Controllers
     public class AuthenticateController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        public AuthenticateController(UserManager<ApplicationUser> userManager)
+        private readonly RoleManager<ApplicationRole> _roleManager;
+        public AuthenticateController(UserManager<ApplicationUser> userManager , RoleManager<ApplicationRole> roleManager)
         {
             _userManager = userManager;
+            _roleManager = roleManager;
         }
+
+
+        [HttpPost]
+        [Route("roles/add")]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ResponseHandle))]
+        public async Task<IActionResult> CreateRole([FromBody] RoleRequest request)
+        {
+            var addRole = new ApplicationRole { Name = request.Role };
+            IdentityResult createRole = await _roleManager.CreateAsync(addRole);
+            return createRole.Succeeded ? Ok(new { message = "Create roles success" }) : BadRequest(new ResponseHandle { Message = createRole?.Errors?.First()?.Description, Success = false });
+        }
+
+
         [HttpPost]
         [Route("register")]
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ResponseHandle))]
 
         public async Task<IActionResult> Register([FromBody] RegisRequest request)
         {
-            var result = await RegisterAsnc(request);
+            var result = await RegisterAsync(request);
             return result.Success ? Ok(result) : BadRequest(result.Message);
         }
         [HttpPost]
@@ -39,19 +54,51 @@ namespace Swagger.Web.Controllers
             return result.Success ? Ok(result) : BadRequest(result.Message);
         }
 
-        private async Task<ResponseHandle> RegisterAsnc(RegisRequest request)
+        private async Task<ResponseHandle> RegisterAsync(RegisRequest request)
         {
+            try
+            {
+                var userExists = await _userManager.FindByEmailAsync(request.Email);
+                if (userExists != null) return new ResponseHandle { Message = "User alreay exists", Success = false };
 
+
+                //
+
+                userExists = new ApplicationUser
+                {
+                    FullName = request.FullName,
+                    Email = request.Email,
+                    ConcurrencyStamp = Guid.NewGuid().ToString(),
+                    UserName = request.Email
+                };
+
+                var createUserToResult = await _userManager.CreateAsync(userExists, request.Password);
+
+                if (!createUserToResult.Succeeded) return new ResponseHandle { Message = $"Create User failed {createUserToResult?.Errors?.First()?.Description}", Success = false };
+
+                var addUserToResult = await _userManager.AddToRoleAsync(userExists, "USER");
+                if(!addUserToResult.Succeeded) return new ResponseHandle { Message = $"Create User Success but could not add user to role {addUserToResult?.Errors?.First()?.Description}", Success = false };
+
+                return new ResponseHandle
+                {
+                    Message = "Register Success",
+                    Success = true
+                };
+            }
+            catch(Exception ex)
+            {
+                return new ResponseHandle
+                {
+                    Message = ex.Message,
+                    Success = false
+                };
+            }
         }
         private async Task<ResponseHandle> LoginAsync(LoginRequest request)
         {
             try
             {
-
-            }
-            catch (Exception ex)
-            {
-                var user = await _userManager.FindByIdAsync(request.Email);
+                var user = await _userManager.FindByEmailAsync(request.Email);
 
                 if (User is null) return new ResponseHandle
                 {
@@ -91,6 +138,13 @@ namespace Swagger.Web.Controllers
                     Success = true,
                     Email = user.Email,
                     UserId = user?.Id.ToString()
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ResponseHandle {
+                    Message = ex.Message,
+                    Success = false
                 };
             }
 

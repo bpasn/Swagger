@@ -21,8 +21,8 @@ var mongoDbIdentityConfig = new MongoDbIdentityConfiguration
 {
     MongoDbSettings = new MongoDbSettings
     {
-        ConnectionString = "",
-        DatabaseName = ""
+        ConnectionString = "mongodb://swagger:1234@localhost:27018/swagger?rertryWrites=true&w=majority",
+        DatabaseName = "swagger"
     },
     IdentityOptionsAction = o =>
     {
